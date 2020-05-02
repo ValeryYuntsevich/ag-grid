@@ -2,13 +2,18 @@
     padding:1em;
 
     button {
-        background: #fff;
-        box-shadow: none;
-        border: 1px solid #ccc;
-        padding: 8px;
+        background-color: #555555;
+        border: none;
+        color: white;
+        padding: 0.5em 1.5em;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 1rem;
         cursor: pointer;
         &:hover {
-          background: #e2e2e2;
+          background: #e7e7e7;
+          color: black;
         }
       }
   }

@@ -28,3 +28,9 @@
 .ag-header-cell-label {
   justify-content: center;
 }
+
+.ag-row .ag-cell {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}

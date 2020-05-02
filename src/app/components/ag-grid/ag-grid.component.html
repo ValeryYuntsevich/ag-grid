@@ -1,6 +1,6 @@
 <div class="main">
     <ag-grid-angular
-    style="width: 1000px; height: 100%; padding: 1em;"
+    style="width: 100%; height: 100%; padding: 1em;"
     class="ag-theme-alpine"
     [gridOptions]="gridOptions"
     [statusBar]="statusBar"
@@ -9,6 +9,8 @@
     [rowMultiSelectWithClick]="true"
     rowSelection="multiple"
     [columnDefs]="columnDefs"
+
+    (firstDataRendered)="onFirstDataRendered($event)"
     >
 </ag-grid-angular>
 </div>

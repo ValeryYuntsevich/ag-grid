@@ -43,6 +43,7 @@ frameworkComponents = {
         headerName: '',
         field: 'checkbox',
         width: 30,
+        suppressSizeToFit: true,
         cellStyle: { 'justify-content': 'center' },
         hide: true,
         cellRendererFramework: CheckboxComponent,
@@ -51,7 +52,7 @@ frameworkComponents = {
       headerName: '',
       field: 'thumbnailVideo',
       autoHeight: true,
-      width: 120,
+      suppressSizeToFit: true,
       cellRendererFramework: ImageFormatterComponent
     },
 
@@ -59,24 +60,26 @@ frameworkComponents = {
       headerName: 'published',
       field: 'publishedAtVideo',
       autoHeight: true,
-      width: 100,
+      suppressSizeToFit: true,
       cellRendererFramework: DateFormatterComponent
     },
 
     {
       headerName: 'title',
       field: 'titleVideo',
+      colId: 'title',
+      maxWidth: 300,
       autoHeight: true,
       cellStyle: { 'white-space': 'normal', 'line-height': '20px' },
-      width: 320
     },
 
     {
       headerName: 'description',
       field: 'descriptionVideo',
+      colId: 'description',
+      maxWidth: 300,
       autoHeight: true,
       cellStyle: { 'white-space': 'normal', 'line-height': '20px' },
-      width: 320
     }
 ];
 
@@ -99,5 +102,11 @@ frameworkComponents = {
       'copy',
     ];
     return result;
+  }
+
+  onFirstDataRendered(params) {
+    console.log('hello')
+    // params.api.sizeColumnsToFit();
+    params.columnApi.autoSizeColumns(['title', 'description']);
   }
 }
