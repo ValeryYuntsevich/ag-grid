@@ -105,8 +105,6 @@ frameworkComponents = {
   }
 
   onFirstDataRendered(params) {
-    console.log('hello')
-    // params.api.sizeColumnsToFit();
     params.columnApi.autoSizeColumns(['title', 'description']);
   }
 }
