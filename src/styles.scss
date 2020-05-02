@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+@import "../node_modules/ag-grid-community/src/styles/ag-grid.scss";
+@import "../node_modules/ag-grid-community/src/styles/ag-theme-alpine/sass/ag-theme-alpine-mixin.scss";
+
+
+ *, *::before,*::after { box-sizing: border-box }
+  
+  body { 
+    margin: 0; 
+    padding: 3em 8em;
+    height: 100vh;
+    background: #667D9D; 
+  }
+  
+  .main {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: 100%;
+    min-height: 250px;
+    background: #ffffff;
+  }
+
+  .ag-theme-alpine {
+    @include ag-theme-alpine();
+}

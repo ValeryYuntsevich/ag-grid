@@ -1,0 +1,15 @@
+<div class="main">
+    <ag-grid-angular
+    style="width: 1000px; height: 100%; padding: 1em;"
+    class="ag-theme-alpine"
+    [gridOptions]="gridOptions"
+    [statusBar]="statusBar"
+    [frameworkComponents]="frameworkComponents"
+    [rowData]="rowData | async"
+    [rowMultiSelectWithClick]="true"
+    rowSelection="multiple"
+    [columnDefs]="columnDefs"
+    >
+</ag-grid-angular>
+</div>
+
