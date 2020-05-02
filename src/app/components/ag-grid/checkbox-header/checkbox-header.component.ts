@@ -29,6 +29,10 @@ export class CheckboxHeaderComponent implements OnInit {
         this.video.checkBoxHeader.next(false);
         this.checked = false;
       }
+      if (this.params.api.getSelectedNodes().length === this.params.api.getDisplayedRowCount()) {
+      this.video.checkBoxHeader.next(true);
+      this.checked = true;
+    }
     });
   }
 

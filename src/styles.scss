@@ -24,3 +24,7 @@
   .ag-theme-alpine {
     @include ag-theme-alpine();
 }
+
+.ag-header-cell-label {
+  justify-content: center;
+}

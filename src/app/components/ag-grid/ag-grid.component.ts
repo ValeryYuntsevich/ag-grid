@@ -33,9 +33,6 @@ frameworkComponents = {
  };
 
  gridOptions = {
-  defaultColDef: {
-    resizable: true,
-  },
   getContextMenuItems: (params) => this.getContextMenuItems(params),
 };
 
@@ -89,19 +86,18 @@ frameworkComponents = {
     this.rowData = this.video.getVideo();
    }
 
-  getContextMenuItems(params: any): any[] {
+   getContextMenuItems(params) {
     const url = this.video.getUrlById(params.node.data.idVideo);
-    return [
-      'copy',
-      'separator',
+    const result = [
       {
-        icon: `<span class="ag-icon ag-icon-linked"></span>`,
-        name: 'Open in new tab',
+        name: 'Open video in new tab',
         action: () => {
-           window.open(url, '_blank');
-        }
-      }
+          window.open(url, '_blank');
+        },
+        icon: `<span class="ag-icon ag-icon-linked"></span>`,
+      },
+      'copy',
     ];
+    return result;
   }
-
 }
