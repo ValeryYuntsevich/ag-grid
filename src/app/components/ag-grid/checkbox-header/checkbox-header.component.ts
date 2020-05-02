@@ -10,8 +10,8 @@ import { VideoService } from 'src/app/services/video.service';
 export class CheckboxHeaderComponent implements OnInit {
 
   params: any;
-  checked = false;
-  checkBoxHeader;
+  checked: boolean;
+  checkBoxHeader: boolean;
 
   constructor(private video: VideoService) { }
 

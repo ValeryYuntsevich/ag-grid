@@ -9,7 +9,7 @@ import { fromEvent } from 'rxjs';
 })
 export class CheckboxComponent implements OnInit {
 
-  checkBox: boolean = false;
+  checkBox: boolean;
   params: any;
 
   constructor(private video: VideoService) { }
