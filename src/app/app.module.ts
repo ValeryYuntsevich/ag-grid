@@ -8,40 +8,20 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { AgGridComponent } from './components/ag-grid/ag-grid.component';
-import { ImageFormatterComponent } from './components/ag-grid/image-formatter/image-formatter.component';
-import { DateFormatterComponent } from './components/ag-grid/date-formatter/date-formatter.component';
-import { ButtonSelectionComponent } from './components/ag-grid/side-bar/button-selection/button-selection.component';
-import { RecordsSelectionComponent } from './components/ag-grid/side-bar/records-selection/records-selection.component';
-import { TotalRecordsComponent } from './components/ag-grid/side-bar/total-records/total-records.component';
-import { CheckboxComponent } from './components/ag-grid/checkbox/checkbox.component';
-import { CheckboxHeaderComponent } from './components/ag-grid/checkbox-header/checkbox-header.component';
+import { AG_GRID_COMPONENTS } from './components/ag-grid';
 
 @NgModule({
   declarations: [
     AppComponent,
     AgGridComponent,
-    ImageFormatterComponent,
-    DateFormatterComponent,
-    ButtonSelectionComponent,
-    RecordsSelectionComponent,
-    TotalRecordsComponent,
-    CheckboxComponent,
-    CheckboxHeaderComponent
+    ...AG_GRID_COMPONENTS,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    AgGridModule.withComponents([
-      ImageFormatterComponent,
-      DateFormatterComponent,
-      ButtonSelectionComponent,
-      RecordsSelectionComponent,
-      TotalRecordsComponent,
-      CheckboxComponent,
-      CheckboxHeaderComponent
-    ])
+    AgGridModule.withComponents([...AG_GRID_COMPONENTS])
   ],
   providers: [],
   bootstrap: [AppComponent]

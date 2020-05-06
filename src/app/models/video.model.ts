@@ -7,3 +7,19 @@ export class Video {
       public descriptionVideo: string
     ) {}
 }
+
+export interface IVideo {
+  id: { videoId: string };
+  snippet: {
+      description: string;
+      publishedAt: string;
+      title: string;
+      thumbnails: {
+        default: { url: string };
+      };
+  };
+}
+
+export interface IVideosResponse {
+  items: IVideo[];
+}
