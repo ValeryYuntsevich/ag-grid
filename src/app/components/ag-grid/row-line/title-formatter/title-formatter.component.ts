@@ -13,7 +13,7 @@ export class TitleFormatterComponent {
   public title: string;
   constructor(private video: VideoService) { }
 
-  public agInit(params: ICellRendererParams): void {
+  public agInit(params?: ICellRendererParams): void {
     this.title = params.data.titleVideo;
     this.urlLink = this.video.getUrlById(params.data.idVideo);
   }

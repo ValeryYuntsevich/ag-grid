@@ -4,7 +4,7 @@ import { Video } from 'src/app/models/video.model';
 import { Observable } from 'rxjs';
 import { statusPanels } from './sidebar-line/sidebar.panels';
 import { gridColumns } from './definition.column';
-import { ICellRendererParams, MenuItemDef, GridOptions } from 'ag-grid-community';
+import { ICellRendererParams, MenuItemDef } from 'ag-grid-community';
 import { WindowService } from 'src/app/services/window.service';
 
 @Component({

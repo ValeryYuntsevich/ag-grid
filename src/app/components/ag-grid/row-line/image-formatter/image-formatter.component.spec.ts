@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { ImageFormatterComponent } from './image-formatter.component';
+import { By } from '@angular/platform-browser';
 
 describe('ImageFormatterComponent', () => {
   let component: ImageFormatterComponent;
@@ -19,7 +19,12 @@ describe('ImageFormatterComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
+  it('should create ImageFormatterComponent', () => {
+    expect(component).toBeDefined();
   });
+
+  it('check class', async(() => {
+    const img = fixture.debugElement.query(By.css('img'));
+    expect(img.nativeElement.className).toBe('image');
+  }));
 });
