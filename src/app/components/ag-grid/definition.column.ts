@@ -1,13 +1,12 @@
 import { ColDef } from 'ag-grid-community';
-
 import {
   CheckboxFormatterComponent,
-  DateFormatterComponent,
-  DescriptionFormatterComponent,
+  CheckboxHeaderComponent,
   ImageFormatterComponent,
+  DateFormatterComponent,
   TitleFormatterComponent,
-  CheckboxHeaderComponent
-} from '.';
+  DescriptionFormatterComponent
+} from './components';
 
 export const gridColumns: ColDef[] = [
   {

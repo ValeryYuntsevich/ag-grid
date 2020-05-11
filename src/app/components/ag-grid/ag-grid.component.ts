@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { VideoService } from 'src/app/services/video.service';
 import { Video } from 'src/app/models/video.model';
 import { Observable } from 'rxjs';
-import { statusPanels } from './sidebar-line/sidebar.panels';
-import { gridColumns } from './definition.column';
 import { ICellRendererParams, MenuItemDef } from 'ag-grid-community';
-import { WindowService } from 'src/app/services/window.service';
+import { VideoService } from 'src/app/services/video-service/video.service';
+import { PageService } from 'src/app/services/page-service/page.service';
+import { gridColumns } from './definition.column';
+import { statusPanels } from './sidebar.panels';
 
 @Component({
   selector: 'app-ag-grid',
@@ -23,18 +23,19 @@ export class AgGridComponent implements OnInit {
     getContextMenuItems: (params: ICellRendererParams) => this.getContextMenuItems(params),
   };
 
-  constructor(private video: VideoService, private window: WindowService) { }
+  constructor(private video: VideoService, private page: PageService) { }
 
   public ngOnInit(): void {
     this.rowData = this.video.getVideo();
   }
 
   public getContextMenuItems(params: ICellRendererParams): MenuItemDef[]  {
+    const link = this.video.getUrlById(params.node.data.idVideo);
     const result = [
       {
         name: 'Open video in new tab',
         action: () => {
-          this.window.openInNewTab(params.node.data.idVideo);
+          this.page.openInNewTab(link);
         },
         icon: `<span class="ag-icon ag-icon-linked"></span>`,
       },

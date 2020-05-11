@@ -8,7 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { AgGridComponent } from './components/ag-grid/ag-grid.component';
-import { AG_GRID_COMPONENTS } from './components/ag-grid';
+import { AG_GRID_COMPONENTS } from './components/ag-grid/components';
 
 @NgModule({
   declarations: [
