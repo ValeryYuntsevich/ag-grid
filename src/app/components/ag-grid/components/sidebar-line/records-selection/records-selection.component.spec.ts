@@ -40,7 +40,7 @@ describe('RecordsSelectionComponent', () => {
     component.agInit({ api } as object as ICellRendererParams);
 
     component.selectedRowsCount$.pipe(skip(1)).subscribe(selectedRowsCount => {
-      expect(selectedRowsCount).toBe(api.getSelectedNodes().length);
+      expect(selectedRowsCount).toBe(api.getSelectedRows().length);
       done();
     });
 

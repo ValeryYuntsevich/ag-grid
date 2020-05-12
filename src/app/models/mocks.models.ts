@@ -27,10 +27,6 @@ export class GridApiMock {
     return this.gridRows.filter(row => row.checked);
   }
 
-  getSelectedNodes() {
-    return this.gridRows;
-  }
-
   addEventListener(eventType: string, listener: () => void): void {
     const event = this[eventType] as Subject<void>;
     const subscription = event.subscribe(() => listener());
