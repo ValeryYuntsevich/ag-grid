@@ -23,6 +23,10 @@ export class GridApiMock {
     return this.gridRows.length;
   }
 
+  getSelectedNodes() {
+    return this.gridRows.filter(row => row.checked);
+  }
+
   getSelectedRows() {
     return this.gridRows.filter(row => row.checked);
   }

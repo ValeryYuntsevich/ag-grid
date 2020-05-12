@@ -6,21 +6,21 @@ import 'ag-grid-enterprise';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AgGridComponent } from './components/ag-grid/ag-grid.component';
-import { AG_GRID_COMPONENTS } from './components/ag-grid/components';
+import { agGridComponents } from './components/ag-grid/components';
 import { AgGridModule } from 'ag-grid-angular';
 
 @NgModule({
   declarations: [
     AppComponent,
     AgGridComponent,
-    ...AG_GRID_COMPONENTS,
+    ...agGridComponents,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    AgGridModule.withComponents([...AG_GRID_COMPONENTS])
+    AgGridModule.withComponents([...agGridComponents])
   ],
   providers: [],
   bootstrap: [AppComponent],

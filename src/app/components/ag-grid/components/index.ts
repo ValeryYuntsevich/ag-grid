@@ -8,7 +8,7 @@ import { ButtonSelectionComponent } from './sidebar-line/button-selection/button
 import { RecordsSelectionComponent } from './sidebar-line/records-selection/records-selection.component';
 import { TotalRecordsComponent } from './sidebar-line/total-records/total-records.component';
 
-export const AG_GRID_COMPONENTS = [
+export const agGridComponents = [
   CheckboxFormatterComponent,
   DateFormatterComponent,
   DescriptionFormatterComponent,

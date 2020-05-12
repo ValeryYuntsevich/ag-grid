@@ -3,7 +3,7 @@ import { ICellRendererParams } from 'ag-grid-community';
 import { AgGridModule } from 'ag-grid-angular';
 import { skip } from 'rxjs/operators';
 import { CheckboxHeaderComponent } from './checkbox-header.component';
-import { AG_GRID_COMPONENTS } from '../..';
+import { agGridComponents } from '../..';
 import { GridApiMock, GridRow } from '../../../../../models/mocks.models';
 
 describe('CheckboxHeaderComponent', () => {
@@ -12,8 +12,8 @@ describe('CheckboxHeaderComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [ AgGridModule.withComponents([...AG_GRID_COMPONENTS])],
-      declarations: [ ...AG_GRID_COMPONENTS ]
+      imports: [ AgGridModule.withComponents([...agGridComponents])],
+      declarations: [ ...agGridComponents ]
     })
     .compileComponents();
   }));
