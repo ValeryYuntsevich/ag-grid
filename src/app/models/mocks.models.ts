@@ -1,6 +1,4 @@
 import { Subject, Subscription } from 'rxjs';
-import { mockResponse } from '../services/video-service/mock-responce';
-import { Video } from './video.model';
 
 export class GridRow {
   constructor(public checked = false) { }
@@ -29,8 +27,8 @@ export class GridApiMock {
     return this.gridRows.filter(row => row.checked);
   }
 
-  getSelectedNodes(): Video[] {
-    return mockResponse;
+  getSelectedNodes() {
+    return this.gridRows;
   }
 
   addEventListener(eventType: string, listener: () => void): void {
