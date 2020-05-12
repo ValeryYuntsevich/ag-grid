@@ -31,13 +31,13 @@ describe('VideoService', () => {
 
   it('check get videos', (done: DoneFn) => {
     service.getVideo().subscribe(videos => {
-      expect(videos.length).toBe(rowResponse.length);
+      expect(videos.length).toBe(rowResponse.items.length);
       const videoViewModel = videos[0];
       const videoDataModel = rowResponse.items[0];
       expect(videoViewModel.idVideo)
         .toEqual(videoDataModel.id.videoId);
       expect(videoViewModel.publishedAtVideo)
-        .toEqual(new Date(videoDataModel.item.snippet.publishedAt));
+        .toEqual(new Date(videoDataModel.snippet.publishedAt));
       expect(videoViewModel.titleVideo)
         .toEqual(videoDataModel.snippet.title);
       expect(videoViewModel.descriptionVideo)

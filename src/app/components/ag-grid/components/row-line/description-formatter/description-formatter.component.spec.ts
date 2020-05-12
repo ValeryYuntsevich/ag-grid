@@ -1,6 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { DescriptionFormatterComponent } from './description-formatter.component';
-import { By } from '@angular/platform-browser';
 import { ICellRendererParams } from 'ag-grid-community';
 
 describe('DescriptionFormatterComponent', () => {
@@ -23,13 +22,6 @@ describe('DescriptionFormatterComponent', () => {
   it('should create DescriptionFormatterComponent', () => {
     expect(component).toBeDefined();
   });
-
-  it('renders description', async(() => {
-    fixture.componentInstance.description = 'test';
-    fixture.detectChanges();
-    const description = fixture.debugElement.query(By.css('p'));
-    expect(description.nativeElement.innerText).toBe('test');
-  }));
 
   it('check agInit() initialize component properly', () => {
     const params = { value : 'description' } as ICellRendererParams;

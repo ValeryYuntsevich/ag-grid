@@ -22,8 +22,7 @@ export class CheckboxFormatterComponent {
     );
   }
 
-  public onStateChange(checkboxState): void {
-    const isSelected = checkboxState.target.checked;
+  public onStateChange(isSelected: boolean): void {
     this.params.node.setSelected(isSelected);
   }
 }

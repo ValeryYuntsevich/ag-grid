@@ -1,1 +1,1 @@
-<input type="checkbox" (change)="onStateChange($event)" [checked]="checkboxState$ | async">
+<input type="checkbox" (change)="onStateChange($event.target.checked)" [checked]="checkboxState$ | async">

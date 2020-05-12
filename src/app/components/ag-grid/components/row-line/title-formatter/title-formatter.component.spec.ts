@@ -1,7 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { TitleFormatterComponent } from './title-formatter.component';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
-import { By } from '@angular/platform-browser';
 import { ICellRendererParams } from 'ag-grid-community';
 import { VideoService } from 'src/app/services/video-service/video.service';
 import { of } from 'rxjs';
