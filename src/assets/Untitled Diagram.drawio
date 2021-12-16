@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-12-16T14:18:34.137Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.1 Safari/605.1.15" etag="8OkMKgaduJURXeTFCCj5" version="15.9.6" type="github">
+<mxfile host="app.diagrams.net" modified="2021-12-16T14:19:11.888Z" agent="5.0 (Windows)" etag="7ndJPck0pqjqUUbDv0vV" version="15.9.6" type="github">
   <diagram id="Xh3EPSXuHTYtJEzt5ljR" name="Page-1">
-    <mxGraphModel dx="1086" dy="1896" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1422" dy="1961" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -118,7 +118,7 @@
             <mxPoint x="440" y="230" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="5Qg1B5x5Rtl6GvGFXqsn-155" value="Dashworks cloud" style="rounded=0;whiteSpace=wrap;html=1;fontSize=32;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+        <mxCell id="5Qg1B5x5Rtl6GvGFXqsn-155" value="Dashworks cloud" style="rounded=0;whiteSpace=wrap;html=1;fontSize=32;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
           <mxGeometry x="40" y="-620" width="760" height="380" as="geometry" />
         </mxCell>
       </root>
