@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-12-17T13:56:45.020Z" agent="5.0 (Windows)" etag="4sVMepjTMjJXrzeeJQHZ" version="15.9.6" type="github">
+<mxfile host="app.diagrams.net" modified="2021-12-17T13:57:17.121Z" agent="5.0 (Windows)" etag="jhEcGQRzM2bdtxwBXuWN" version="15.9.6" type="github">
   <diagram id="Xh3EPSXuHTYtJEzt5ljR" name="Page-1">
     <mxGraphModel dx="1497" dy="2003" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -58,7 +58,7 @@
         <mxCell id="sjqZ1okJGAsFbaf3YIpp-6" value="Windows service" style="text;strokeColor=none;fillColor=default;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontFamily=Times New Roman;fontSize=18;fontStyle=1;fontColor=default;labelBorderColor=none;labelBackgroundColor=none;" parent="1" vertex="1">
           <mxGeometry x="669" width="140" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="sjqZ1okJGAsFbaf3YIpp-7" value="Worker" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontSize=16;fillColor=#1ba1e2;strokeColor=#006EAF;fontStyle=1;fontColor=#ffffff;" parent="1" vertex="1">
+        <mxCell id="sjqZ1okJGAsFbaf3YIpp-7" value="Worker" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontSize=16;fillColor=#1ba1e2;strokeColor=#006EAF;fontStyle=1;fontColor=#ffffff;" parent="1" vertex="1">
           <mxGeometry x="840" y="120" width="170" height="42.5" as="geometry" />
         </mxCell>
         <mxCell id="sjqZ1okJGAsFbaf3YIpp-8" value="" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontSize=18;strokeWidth=1;dashed=1;fillColor=#ffcd28;strokeColor=#d79b00;gradientColor=#ffa500;" parent="1" vertex="1">
