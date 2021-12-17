@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-12-17T14:08:09.307Z" agent="5.0 (Windows)" etag="n6vYk5GSaqZTk5HVkbd-" version="15.9.6" type="github">
+<mxfile host="app.diagrams.net" modified="2021-12-17T14:11:06.293Z" agent="5.0 (Windows)" etag="DGYT1ErXi8KtIvGjnybh" version="15.9.6" type="github">
   <diagram id="Xh3EPSXuHTYtJEzt5ljR" name="Page-1">
-    <mxGraphModel dx="1293" dy="1914" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1704" dy="1945" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -14,7 +14,7 @@
           <mxGeometry x="260" y="50" width="120" height="200" as="geometry" />
         </mxCell>
         <mxCell id="5Qg1B5x5Rtl6GvGFXqsn-114" value="Sentinel (Server application)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontFamily=Times New Roman;fontSize=20;fontStyle=1" parent="1" vertex="1">
-          <mxGeometry x="910" y="-70" width="260" height="30" as="geometry" />
+          <mxGeometry x="40" y="-70" width="260" height="30" as="geometry" />
         </mxCell>
         <mxCell id="5Qg1B5x5Rtl6GvGFXqsn-115" value="Front-end" style="text;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontFamily=Times New Roman;fontSize=20;fontStyle=1;labelBorderColor=none;labelBackgroundColor=none;shadow=0;sketch=0;fontColor=#616161;" parent="1" vertex="1">
           <mxGeometry x="260" y="300" width="120" height="30" as="geometry" />
@@ -35,7 +35,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="5Qg1B5x5Rtl6GvGFXqsn-148" value="Client network" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontSize=32;strokeWidth=2;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
-          <mxGeometry x="226.25" y="760" width="757.5" height="240" as="geometry" />
+          <mxGeometry x="226.25" y="760" width="757.5" height="120" as="geometry" />
         </mxCell>
         <mxCell id="5Qg1B5x5Rtl6GvGFXqsn-149" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Times New Roman;fontSize=32;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="5Qg1B5x5Rtl6GvGFXqsn-148" target="5Qg1B5x5Rtl6GvGFXqsn-2" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -47,7 +47,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="5Qg1B5x5Rtl6GvGFXqsn-155" value="Dashworks cloud" style="rounded=0;whiteSpace=wrap;html=1;fontSize=32;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
-          <mxGeometry x="223.75" y="-400" width="760" height="240" as="geometry" />
+          <mxGeometry x="223.75" y="-310" width="760" height="150" as="geometry" />
         </mxCell>
         <mxCell id="sjqZ1okJGAsFbaf3YIpp-4" value="MailerLogic" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontSize=16;fillColor=#A9B5BF;strokeColor=#23445d;glass=1;shadow=0;sketch=0;fontStyle=1;" parent="1" vertex="1">
           <mxGeometry x="340" y="162.5" width="150" height="40" as="geometry" />
